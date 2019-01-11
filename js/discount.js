@@ -5,8 +5,9 @@ $(function () {
         url: 'http://127.0.0.1:9090/api/getcategorytitle',
         dataType: 'json',
         success: function (data) {
+            console.log(data)
             var html = template('cateTpl', data);
-            $('.mmm_categroy').html(html);
+            $('.mmm_category').html(html);
 
 
 
@@ -23,7 +24,7 @@ $(function () {
                         titleid: id
                     },
                     success: function (data) {
-                        // console.log(data);
+                        console.log(data);
                         var html = template('cateListTpl',data);
                         cateList.html(html);
                     }
@@ -35,7 +36,7 @@ $(function () {
 
 
 // 点击显示与隐藏
-    $('.mmm_categroy').on('click','h3',function(){
+    $('.mmm_category').on('click','h3',function(){
         console.log(1)
         $(this).siblings("i").toggleClass('fa-chevron-right').toggleClass('fa-chevron-down');
         $(this).siblings("div").slideToggle();

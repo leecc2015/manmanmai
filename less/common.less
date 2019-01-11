@@ -3,7 +3,7 @@
 
 // 主题色
 @mainColor:#ff841d;
-@fontColor:#ff841d;
+@fontColor:#252117;
 
 body,div,p,a,i,ul,li,input,h3
 {
@@ -24,7 +24,7 @@ img{
    height:100%;
    display:block;
 }
-input {
+input,select,option {
     outline-style: none;
     border:none;
 }
@@ -43,6 +43,36 @@ input {
     background-color: #f1f1f1;
     margin:0 auto;
     min-width: 320px;
+}
+
+/*头部区域*/
+.mmm_header {
+    height:100/@base;
+    width: 100%;
+    background-color: @mainColor;
+    overflow: hidden;
+    position: relative;
+
+    .logo {
+        width:371/@base;
+        height: 50/@base;
+        background: url(../images/header_logo.png) center center no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top:50%;
+        left:20/@base;
+        transform: translateY(-50%);
+    }
+    .download {
+        width: 68/@base;
+        height: 68/@base;
+        background: url(../images/header_app.png) center center no-repeat;
+        position: absolute;
+        background-size: 100% 100%;
+        right:20/@base;
+        top:50%;
+        transform: translateY(-50%);
+    }
 }
 
 /* 搜索区域 */
@@ -75,7 +105,7 @@ input {
             height: 100%;
             background-color: #f1f1f1;
             border-radius:30/@base;
-            font-size:2 4/@base;
+            font-size:24/@base;
             padding-left:30/@base;
 
         }

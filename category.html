@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/category.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <title>慢慢卖</title>
+</head>
+
+
+<body>
+
+    <div class="mmm_container">
+        <!-- 头部  -->
+        <div class="mmm_header">
+            <div class="logo"></div>
+            <div class="download"></div>
+        </div>
+        <!-- 搜索  -->
+        <div class="mmm_search">
+            <div class="sear">
+                <a href="#">搜索</a>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="请输入你想比价的商品">
+            </div>
+        </div>
+
+        <!-- 三级导航  -->
+        <div class="mmm_nav">
+            <a href="index.html">首页 ></a>
+            <a href="discount.html">全部分类 ></a>
+            <a href="javascript:;" class='thirdList'>
+
+                <span>电视 ></span>
+            </a>
+            <a href="#" class='select'>筛选</a>
+        </div>
+        <!-- 商品列表  -->
+        <div class="mmm_goodList">
+            <ul>
+
+            </ul>
+        </div>
+
+        <!-- 分页  -->
+        <div class="mmm_page">
+            <div class="prev">上一页</div>
+            <div class="page">
+
+                <select>
+
+                </select>
+            </div>
+            <div class="next">下一页</div>
+        </div>
+
+    </div>
+
+
+    <!-- 三级菜单渲染模板 -->
+    <script type='text/html' id='thirdListTpl'>
+
+        {{each result v i}}
+           <span>{{v.category}} ></span>
+        {{/each}}
+    </script>
+
+    <!-- 商品渲染模板 -->
+    <script type='text/html' id='goodListTpl'>
+
+        {{each result v i}}
+        <li>
+            <a href="#" class='left'>{{@ v.productImg}}</a>
+                <div class="info">
+                    <a href="#">{{v.productName}}</a>
+                    <p>{{v.productPrice}}</p>
+                    <span>{{v.productQuote }}</span>
+                    <span>{{v.productCom}}</span>
+                </div>
+            </li>
+        {{/each}}
+
+    </script>
+ 
+    
+         <!-- 分页渲染模板 -->
+     <script type='text/html' id='pageListTpl'>
+
+        {{each arr v i}}
+          <option value='{{i+1}}'>{{v}}</option>
+        {{/each}}
+      </script>
+
+
+    <script src="./lib/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/category.js"></script>
+
+</body>
+
+</html>
