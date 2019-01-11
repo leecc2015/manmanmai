@@ -13,7 +13,7 @@ $.ajax({
 
 $('.mmm_nav').on('click','a:nth-child(8)' ,function(e){
     e.preventDefault();
-    $('.mmm_nav .other').toggleClass('hidden');
+    $('.mmm_nav .hidden').toggle();
 })
 
 // 功能2 商品列表渲染
@@ -26,6 +26,8 @@ $.ajax({
         $('.mmm_goodList ul').html(html);
     }
 })
+
+
 
 
 

@@ -1,0 +1,63 @@
+@import 'common';
+@import 'header';
+
+
+.mmm_container {
+    background-color: #fff;
+}
+.mmm_categroy {
+    width: 100%;
+    border-radius:10/@base;
+    border-top:2px solid #ccc; 
+    border-bottom:2px solid #ccc;
+    margin-bottom:53/@base;
+    .cateName {
+        overflow: hidden;
+        position: relative;
+    }
+    
+   
+
+    .cateName h3{
+        height:80/@base;
+        width: 100%;
+        background-color: #ededed;
+        line-height:80/@base;
+        color:#160000;
+        text-indent:20/@base;
+        border-bottom:2px solid #ccc; 
+        font-size:32/@base;
+        
+    }
+    i {
+        position: absolute;
+        top:25/@base;
+        right:20/@base;
+        font-size:32/@base;
+        color:#160000;
+    }
+
+    .cateList {
+        display:none;
+        a {
+            width: 33.333%;
+            height:80/@base;
+            background-color: #f9f9f9;
+            line-height:80/@base;
+            text-align:center;
+            font-size:26/@base;
+            border-right:2px solid #ccc;  
+            border-bottom:2px solid #ccc;
+            float: left;
+            color:#393f44;
+            &:nth-of-type(3n) {
+                border-right:none;
+            }
+        }
+        
+    }
+
+    .disb {
+        display: block;
+    }
+}
