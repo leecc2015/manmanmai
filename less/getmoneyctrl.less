@@ -1,0 +1,158 @@
+// 引入公共文件
+@import 'common';
+
+
+
+.mmm_container {
+    background-color: #fff;
+}
+
+
+/* header区域 */
+.mmm_header {
+    .info {
+        color:#fff;
+        font-size:42/@base;
+        line-height:100/@base;
+        text-align:center;
+        font-weight:700;
+    }
+    i {
+        color:#fff;
+        font-size:60/@base;
+        line-height:100/@base;
+        position: absolute;
+        left:20/@base;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+/* 商品区域 */
+.mmm_goodList {
+
+   
+
+    .list ul li{
+        height:260/@base;
+        background-color: #fff;
+        border-bottom:1px solid #f1f1f1;
+        position: relative;
+        padding-left:234/@base;
+       
+        .goodPic {
+            width:234/@base;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:0;
+            padding:30/@base;
+        }
+        .goodInfo {
+            width: 100%;
+            height:260/@base;
+            padding:34/@base 28/@base;
+            .p {
+                height:138/@base;
+                color: @fontColor;
+                font-size: 28/@base;
+                a {
+                    color:@fontColor;
+                }
+                .pinkage{
+                    color:@mainColor;
+                }
+            }
+
+            div {
+                color:#b2b1b0;
+                .page{
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* 分页*/
+.mmm_page {
+    position: relative;
+    height:72/@base;
+    margin-bottom:50/@base;
+    .prev {
+        position: absolute;
+        width:166/@base;
+        height:68/@base;
+        left:42/@base;
+        border-radius: 10/@base;
+        box-shadow: -2px 2px 5px 2px #ccc ;
+        font-size:28/@base;
+        color:@fontColor;
+        line-height:68/@base;
+        text-align: center;
+    }
+
+    .next {
+        position: absolute;
+        width:166/@base;
+        height:68/@base;
+        right:42/@base;
+        box-shadow: -2px 2px 5px 2px #ccc ;
+        border-radius: 10/@base;
+        font-size:28/@base;
+        color:@fontColor;
+        line-height:68/@base;
+        text-align: center;
+    }
+    .page {
+        position: absolute;
+        // width:166/@base;
+        // height:68/@base;
+        left:50%;
+        transform:translateX(-50%);
+        border: 2px solid #b8b8b8;
+        
+        .icon {
+            background-color: #e1e1e1;
+            width:34/@base;
+            height:66/@base; 
+            border: 1px solid #c4c4c4;
+            position: absolute;
+            line-height:66/@base;
+            text-align: center;
+            top:1/@base;
+            right:0;
+
+        }
+
+        select {
+            width:166/@base;
+            height:68/@base;
+            font-size:35/@base;
+            text-align:center;
+            padding-left:20/@base;
+            // 隐藏下拉图标
+            -webkit-appearance:none;
+            
+            option{
+                width:166/@base;
+                height:68/@base;
+                font-size:30/@base;
+                text-align:center;
+                display: block;
+            }
+        }
+    }
+}
+
+.mmm_footer {
+    background-color: #f1f1f1;
+}
+
+
+
+
+

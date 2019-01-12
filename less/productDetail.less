@@ -1,0 +1,213 @@
+@import "common";
+
+.mmm_container {
+    background-color: #fff;
+}
+
+.mmm_nav {
+    height:80/@base;
+    width: 100%;
+    background: url(../images/bg1.png);
+    background-size: 100% 80/@base;
+    font-size:28/@base;
+    line-height: 80/@base;
+    color:@fontColor;
+    padding: 0 10/@base;
+    a {
+        display: inline;
+        color:@fontColor;
+    }
+
+    .select {
+        float: right;
+        width:124/@base;
+        height:54/@base;
+        line-height: 58/@base;
+        text-align: center;
+        font-size:28/@base;
+        margin-top:12/@base;
+        color:@fontColor;
+        border-radius:5/@base;
+        box-shadow: -2px 2px 5px 2px #ccc ;
+    }
+} 
+
+
+/* 详情部分 */
+.mmm_good {
+    margin-bottom:3/@base;
+     
+   .detail {
+       height:504/@base;
+       width: 100%;
+       padding:40/@base;
+   
+       p {
+          font-size:36/@base;
+          text-align:center;
+          width: 100%;
+          height:140/@base; 
+       }
+       .pic {
+           width:336/@base;
+           height:300/@base;
+           margin:0 auto;
+         
+       }
+   }
+
+   .btn {
+       width: 100%;
+       border-top:2px solid #bc4833;
+       border-bottom:2px solid #bc4833;
+       overflow: hidden;
+
+       a {
+        height:70/@base;
+        width:33.3333%;
+        float: left;
+        color:#fff;
+        line-height:70/@base;
+        text-align: center;
+        font-size:28/@base;
+
+        &:nth-child(1){
+          background-color: #ffa126;
+          border-right:2px solid #bc4833;
+        }
+        &:nth-child(2){
+          background-color: #ffc82f;
+          border-right:2px solid #bc4833;
+        }
+        &:nth-child(3){
+          background-color: #ffc82f;
+        }
+       }
+   }
+
+   .price {
+       height:92/@base;
+       width: 100%;
+       position: relative;
+       border-bottom:2px solid #b2b2b2; 
+       .left {
+         height:92/@base;
+         width:180/@base;
+         line-height:92/@base;
+         text-align: right;
+         font-size:28/@base;
+         position: absolute;
+         left:0;
+         top:0;
+         position: relative;
+         i {
+             width:16/@base;
+             height:16/@base;
+             background: url(../images/slogo.png);
+             background-size: 100% 100%;
+             position: absolute;
+             left:20/@base;
+             top:50%;
+             transform: translateY(-50%);
+         }
+       }
+
+       .right {
+        height:92/@base;
+        width:278/@base;
+        line-height:92/@base;
+        text-align: left;
+        font-size:28/@base;
+        position: absolute;
+        right:0;
+        top:0;
+        color:red;
+
+        a {
+            position: absolute;
+            right:10/@base;
+            top:50%       ;
+            transform: translateY(-50%);
+            width:112/@base;
+            height:48/@base;
+            line-height:48/@base;
+            border-radius: 10/@base;
+            background-color:#ff5500;
+            color:#fff;
+            font-size:28/@base;
+            text-align: center;
+        }
+      }
+   }
+
+   .tips {
+      height:124/@base;
+      width: 100%;
+      border-bottom:9/@base solid #767676;
+      padding:20/@base; 
+      color:#908587;
+      font-size:24/@base;
+   }
+}
+
+/* 评论部分 */
+.mmm_comment {
+
+    .netFri{
+        width: 100%;
+        height:68/@base;
+        line-height:68/@base;
+        text-align: center;
+        font-size:26/@base;
+        color:@fontColor;
+        background-color: #dbdbdb; 
+    }
+
+    ul {
+
+        li {
+            border-bottom:2px solid #d0d0d0;
+       
+           padding:32/@base 18/@base 10/@base;
+           .info {
+               overflow: hidden;
+               .user {
+                   float: left;
+                   color:#656980;
+                   font-size:20/@base;
+               }
+               .date{
+                   float: right;
+                   color:#aaa;
+                   font-size:20/@base;
+               }
+           }
+           .shop {
+               text-align:right;
+               color:#656980;
+               font-size:24/@base;
+               margin-bottom:24/@base;
+           }
+           .main {
+              font-size:24/@base; 
+           } 
+       }
+    }
+
+    .more {
+       height:64/@base;
+       border-radius:5/@base;
+       font-size:28/@base;
+       line-height:64/@base;
+       text-align:center;
+       background-image: linear-gradient(to top,#d7d7d7, #f4f4f4);
+       border-bottom:2px solid #d0d0d0;
+       margin:32/@base 18/@base 52/@base;     
+    }
+    
+}
+
+.mmm_register,
+.mmm_footer {
+    background-color: #f1f1f1;
+}

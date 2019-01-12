@@ -85,6 +85,7 @@
 /* 分页*/
 .mmm_page {
     position: relative;
+    height:72/@base;
     .prev {
         position: absolute;
         width:166/@base;
@@ -117,13 +118,28 @@
         left:50%;
         transform:translateX(-50%);
         border: 2px solid #b8b8b8;
+        
+        .icon {
+            background-color: #e1e1e1;
+            width:34/@base;
+            height:66/@base; 
+            border: 1px solid #c4c4c4;
+            position: absolute;
+            line-height:66/@base;
+            text-align: center;
+            top:1/@base;
+            right:0;
+
+        }
 
         select {
             width:166/@base;
             height:68/@base;
             font-size:35/@base;
             text-align:center;
-            padding-left:60/@base;
+            padding-left:50/@base;
+            // 隐藏下拉图标
+            -webkit-appearance:none;
             
             option{
                 width:166/@base;
@@ -136,7 +152,23 @@
     }
 }
 
+.mmm_register {
+    height:154/@base;
+    padding-top:50/@base;
+    border:none;
+    background-color: #f1f1f1;
+    margin-bottom:0;
+    a {
 
+        border-top:1px solid #c5c5c5;
+        border-bottom:1px solid #c5c5c5;
+    }
+}
+
+.mmm_footer {
+    
+    background-color: #f1f1f1;
+}
 
 
 

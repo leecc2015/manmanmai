@@ -6,7 +6,8 @@ i,
 ul,
 li,
 input,
-h3 {
+h3,
+textarea {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -16,7 +17,7 @@ h3 {
   font-weight: normal;
 }
 body {
-  font-size: 0.18666667rem;
+  font-size: 0.37333333rem;
 }
 img {
   width: 100%;
@@ -108,7 +109,7 @@ option {
   overflow: hidden;
   border-top: 1px solid #c5c5c5;
   border-bottom: 1px solid #c5c5c5;
-  margin-bottom: 0.45333333rem;
+  background-color: #f1f1f1;
 }
 .mmm_register a {
   float: left;
@@ -126,7 +127,8 @@ option {
 }
 /* 底部注册区域 */
 .mmm_footer {
-  height: 1.2rem;
+  padding-top: 0.45333333rem;
+  height: 1.70666667rem;
 }
 .mmm_footer .app {
   text-align: center;
@@ -216,8 +218,13 @@ option {
   height: 3.46666667rem;
   padding: 0.45333333rem 0.37333333rem;
 }
-.mmm_goodList .list ul li .goodInfo p {
+.mmm_goodList .list ul li .goodInfo .p {
   height: 1.84rem;
+  color: #252117;
+  font-size: 0.37333333rem;
+}
+.mmm_goodList .list ul li .goodInfo .p .pinkage {
+  color: #ff841d;
 }
 .mmm_goodList .list ul li .goodInfo div {
   color: #b2b1b0;

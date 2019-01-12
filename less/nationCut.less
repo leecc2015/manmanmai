@@ -1,0 +1,209 @@
+// 引入公共文件
+@import 'common';
+
+
+
+.mmm_container {
+    background-color: #fff;
+}
+
+
+/* header区域 */
+.mmm_header {
+    .info {
+        color:#fff;
+        font-size:42/@base;
+        line-height:100/@base;
+        text-align:center;
+        font-weight:700;
+    }
+    i {
+        color:#fff;
+        font-size:60/@base;
+        line-height:100/@base;
+        position: absolute;
+        left:20/@base;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+
+/* 详情区域 */
+.mmm_detail {
+    width: 100%;
+    padding:18/@base;
+    margin-bottom:32/@base;
+
+    h3 {
+        // height:86/@base;
+        font-weight: 700;
+        font-size:38/@base;
+        color:@fontColor;
+        // line-height:86/@base;
+    }
+    .short {
+        color:#9a999a; 
+        font-size:26/@base;
+        height:50/@base;
+        line-height:50/@base;
+    }
+
+    .info {
+        overflow: hidden;
+        margin-bottom:36/@base;
+        .spic {
+            width: 274/@base;
+            height: 274/@base;
+            float: right;
+        }
+
+        p {
+            font-size:32/@base;
+
+        }
+        .lpic {
+            height:724/@base;
+            margin-top:10/@base;
+        }
+    }
+
+    .list {
+        width:280/@base;
+        margin:0 auto;
+        box-shadow: 2px 2px 5px 2px #ccc ;
+
+        ul{
+            width: 100%;
+            padding:0 20/@base;
+
+            li {
+                width: 100%;
+                height:42/@base;
+                border-bottom:2px dashed #ccc;
+                overflow: hidden;
+                font-size:24/@base;
+                padding:0 20/@base;
+                a {
+                    color:@fontColor;
+                }
+                span {
+                    display: block;
+                    overflow: hidden;
+                    strong {
+                        float: right;
+                        color:#f37403;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 前往购买区域 */
+.mmm_buy {
+    width:670/@base;
+    height: 62/@base;
+    background-color: #f37403;
+    color:#fff;
+    font-size:26/@base;
+    line-height: 62/@base;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 5/@base;
+    margin-bottom:70/@base;
+
+}
+
+.mmm_app {
+ padding:0 22/@base;
+ margin-bottom:60/@base;
+}
+
+.mmm_comment {
+    padding:0 22/@base;
+    .write{
+        margin-bottom:30/@base;
+
+        p{
+            font-size:30/@base;
+            line-height:70/@base;  
+        }
+        .text {
+            width: 100%;
+            height:224/@base;
+            border:2px solid #ccc;
+            textarea {
+                width: 100%;
+                height:145/@base;
+                display:block;
+                border:none;
+            }
+
+            div {
+                background-color: #fbfbfb;
+                height:70/@base;
+                border-top:2px solid #f4f4f4;
+
+                a{
+                    height:74/@base;
+                    width:202/@base;
+                    background-color: #ff841d; 
+                    border:2px solid #ff7203;
+                    float: right;
+                    color:#fff;
+                    text-align: center;
+                    line-height: 70/@base;
+                    font-size:32/@base;
+                }
+
+            }
+        }
+    }
+
+    .frash {
+        p{
+            font-size:30/@base;
+            line-height:70/@base;  
+        }
+        
+        .message {
+            position: relative;
+            padding-left:106/@base;
+            margin:50/@base 0 88/@base 0;
+            .pic {
+              width:86/@base;
+              height:86/@base;
+              border-radius: 50%;
+              position: absolute;
+              left:0;
+              top:0;  
+            }
+            .txt {
+                height:86/@base;
+                div {
+                    overflow: hidden;
+                    font-size:26/@base;
+                    .name{
+                        float: left;
+                        color:#5797c4; 
+                    }
+                    .time {
+                        float: right;
+                        color:#c6c6c3; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* footer区域 */
+.mmm_footer {
+    background-color: #f1f1f1;
+}
+
+
+
+
+

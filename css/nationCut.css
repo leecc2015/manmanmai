@@ -1,0 +1,318 @@
+body,
+div,
+p,
+a,
+i,
+ul,
+li,
+input,
+h3,
+textarea {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+  font-weight: normal;
+}
+body {
+  font-size: 0.37333333rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+input,
+select,
+option {
+  outline-style: none;
+  border: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.mmm_container {
+  width: 10rem;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  min-width: 320px;
+}
+/*头部区域*/
+.mmm_header {
+  height: 1.33333333rem;
+  width: 100%;
+  background-color: #ff841d;
+  overflow: hidden;
+  position: relative;
+}
+.mmm_header .logo {
+  width: 4.94666667rem;
+  height: 0.66666667rem;
+  background: url(../images/header_logo.png) center center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 0.26666667rem;
+  transform: translateY(-50%);
+}
+.mmm_header .download {
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+  background: url(../images/header_app.png) center center no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+  right: 0.26666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 搜索区域 */
+.mmm_search {
+  width: 100%;
+  height: 1.33333333rem;
+  background-color: #fff;
+  padding: 0.29333333rem 0.26666667rem;
+}
+.mmm_search .sear {
+  float: right;
+  width: 1.70666667rem;
+  height: 0.8rem;
+  background-color: #ff841d;
+  border-radius: 0.4rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.45333333rem;
+}
+.mmm_search .sear a {
+  color: #fff;
+}
+.mmm_search .input {
+  width: 7.54666667rem;
+  height: 0.8rem;
+}
+.mmm_search .input input {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  border-radius: 0.4rem;
+  font-size: 0.32rem;
+  padding-left: 0.4rem;
+}
+/* 登录注册区域 */
+.mmm_register {
+  height: 0.90666667rem;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
+  background-color: #f1f1f1;
+}
+.mmm_register a {
+  float: left;
+  width: 33.3333%;
+  height: 0.90666667rem;
+  border-right: 1px solid #c5c5c5;
+  text-align: center;
+  line-height: 0.90666667rem;
+  font-size: 0.34666667rem;
+  color: #30230f;
+}
+.mmm_register .returnTop {
+  border: none;
+  background: url(../images/top.jpg) 0.26666667rem center no-repeat;
+}
+/* 底部注册区域 */
+.mmm_footer {
+  padding-top: 0.45333333rem;
+  height: 1.70666667rem;
+}
+.mmm_footer .app {
+  text-align: center;
+}
+.mmm_footer .app span:nth-child(1) {
+  color: red;
+}
+.mmm_footer .app span:nth-child(2) {
+  color: #30230f;
+}
+.mmm_footer .app span:nth-child(2) {
+  color: #c5c5c5;
+}
+.mmm_footer .net {
+  text-align: center;
+}
+.mmm_container {
+  background-color: #fff;
+}
+/* header区域 */
+.mmm_header .info {
+  color: #fff;
+  font-size: 0.56rem;
+  line-height: 1.33333333rem;
+  text-align: center;
+  font-weight: 700;
+}
+.mmm_header i {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.33333333rem;
+  position: absolute;
+  left: 0.26666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 详情区域 */
+.mmm_detail {
+  width: 100%;
+  padding: 0.24rem;
+  margin-bottom: 0.42666667rem;
+}
+.mmm_detail h3 {
+  font-weight: 700;
+  font-size: 0.50666667rem;
+  color: #252117;
+}
+.mmm_detail .short {
+  color: #9a999a;
+  font-size: 0.34666667rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+}
+.mmm_detail .info {
+  overflow: hidden;
+  margin-bottom: 0.48rem;
+}
+.mmm_detail .info .spic {
+  width: 3.65333333rem;
+  height: 3.65333333rem;
+  float: right;
+}
+.mmm_detail .info p {
+  font-size: 0.42666667rem;
+}
+.mmm_detail .info .lpic {
+  height: 9.65333333rem;
+  margin-top: 0.13333333rem;
+}
+.mmm_detail .list {
+  width: 3.73333333rem;
+  margin: 0 auto;
+  box-shadow: 2px 2px 5px 2px #ccc ;
+}
+.mmm_detail .list ul {
+  width: 100%;
+  padding: 0 0.26666667rem;
+}
+.mmm_detail .list ul li {
+  width: 100%;
+  height: 0.56rem;
+  border-bottom: 2px dashed #ccc;
+  overflow: hidden;
+  font-size: 0.32rem;
+  padding: 0 0.26666667rem;
+}
+.mmm_detail .list ul li a {
+  color: #252117;
+}
+.mmm_detail .list ul li span {
+  display: block;
+  overflow: hidden;
+}
+.mmm_detail .list ul li span strong {
+  float: right;
+  color: #f37403;
+}
+/* 前往购买区域 */
+.mmm_buy {
+  width: 8.93333333rem;
+  height: 0.82666667rem;
+  background-color: #f37403;
+  color: #fff;
+  font-size: 0.34666667rem;
+  line-height: 0.82666667rem;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 0.06666667rem;
+  margin-bottom: 0.93333333rem;
+}
+.mmm_app {
+  padding: 0 0.29333333rem;
+  margin-bottom: 0.8rem;
+}
+.mmm_comment {
+  padding: 0 0.29333333rem;
+}
+.mmm_comment .write {
+  margin-bottom: 0.4rem;
+}
+.mmm_comment .write p {
+  font-size: 0.4rem;
+  line-height: 0.93333333rem;
+}
+.mmm_comment .write .text {
+  width: 100%;
+  height: 2.98666667rem;
+  border: 2px solid #ccc;
+}
+.mmm_comment .write .text textarea {
+  width: 100%;
+  height: 1.93333333rem;
+  display: block;
+  border: none;
+}
+.mmm_comment .write .text div {
+  background-color: #fbfbfb;
+  height: 0.93333333rem;
+  border-top: 2px solid #f4f4f4;
+}
+.mmm_comment .write .text div a {
+  height: 0.98666667rem;
+  width: 2.69333333rem;
+  background-color: #ff841d;
+  border: 2px solid #ff7203;
+  float: right;
+  color: #fff;
+  text-align: center;
+  line-height: 0.93333333rem;
+  font-size: 0.42666667rem;
+}
+.mmm_comment .frash p {
+  font-size: 0.4rem;
+  line-height: 0.93333333rem;
+}
+.mmm_comment .frash .message {
+  position: relative;
+  padding-left: 1.41333333rem;
+  margin: 0.66666667rem 0 1.17333333rem 0;
+}
+.mmm_comment .frash .message .pic {
+  width: 1.14666667rem;
+  height: 1.14666667rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mmm_comment .frash .message .txt {
+  height: 1.14666667rem;
+}
+.mmm_comment .frash .message .txt div {
+  overflow: hidden;
+  font-size: 0.34666667rem;
+}
+.mmm_comment .frash .message .txt div .name {
+  float: left;
+  color: #5797c4;
+}
+.mmm_comment .frash .message .txt div .time {
+  float: right;
+  color: #c6c6c3;
+}
+/* footer区域 */
+.mmm_footer {
+  background-color: #f1f1f1;
+}

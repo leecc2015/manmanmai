@@ -22,6 +22,7 @@ $.ajax({
     url:'http://127.0.0.1:9090/api/getmoneyctrl',
     dataType:'json',
     success:function( data ){
+        console.log(data)
         var html = template('goodListTpl', data);
         $('.mmm_goodList ul').html(html);
     }

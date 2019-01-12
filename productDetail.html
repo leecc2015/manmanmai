@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/productDetail.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <title>慢慢卖-商品详情</title>
+</head>
+
+<body>
+    <div class="mmm_container">
+
+        <!-- 头部  -->
+        <div class="mmm_header">
+            <div class="logo"></div>
+            <div class="download"></div>
+        </div>
+        <!-- 搜索  -->
+        <div class="mmm_search">
+            <div class="sear">
+                <a href="#">搜索</a>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="请输入你想比价的商品">
+            </div>
+        </div>
+
+        <!-- 三级导航  -->
+        <div class="mmm_nav">
+            <a href="index.html">首页 ></a>
+            <a href="discount.html" class='thirdList-2'>全部分类 ></a>
+            <a href="javascript:;" class='thirdList-3'>
+
+                <span>电视 ></span>
+            </a>
+            <a href="#" class='select'>筛选</a>
+        </div>
+
+        <!-- 详情  -->
+        <div class="mmm_good">
+
+            <div class="detail">
+                <!-- 渲染 -->
+            </div>
+            <div class="btn">
+                <a href="javascript:;">比价购买</a>
+                <a href="javascript:;">产品参数</a>
+                <a href="javascript:;" class='comm'>比价购买</a>
+            </div>
+
+            <div class="price">
+                <div class="left">
+                    <i></i>
+                    京东商城
+                </div>
+                <div class="right">
+                    <span>￥1999.00</span>
+                    <a href="#">去购买</a>
+                </div>
+            </div>
+
+            <div class="tips">* 实际价格以各网站列出的实时销售为准，我们提供的价格可能有数小时至数日的延迟。</div>
+
+
+        </div>
+
+        <!-- 评论  -->
+        <div class="mmm_comment">
+            <div class="netFri">网友评价</div>
+            <ul>
+               <!-- 渲染 -->
+            </ul>
+
+            <div class="more">查看更多评论</div>
+        </div>
+
+        <!-- 登录注册  -->
+        <div class="mmm_register">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:;" class='returnTop'>返回顶部</a>
+        </div>
+        <!-- 底部  -->
+        <div class="mmm_footer">
+            <div class="app">
+                <span>手机APP下载 </span>
+                <span>慢慢卖手机版</span>
+                <span> -- 掌上比价平台</span>
+            </div>
+            <div class="net">m.manmanbuy.com</div>
+        </div>
+    </div>
+
+
+    <!-- 商品详情渲染模板 -->
+    <script type='text/html' id='detailTpl'>
+
+      {{each result v i}}
+          <p>{{v.productName}}</p>
+          <div class="pic">{{@ v.productImg}}</div>
+      {{/each}}
+   </script>
+
+    <!-- 商品详情渲染模板 -->
+    <script type='text/html' id='commentTpl'>
+
+       {{each result v i}}
+        <li>
+             <div class="info">
+                 <div class="user">{{v.comName}}</div>
+                 <div class="date">{{v.comTime}}</div>
+             </div>
+             <p class='shop'>{{v.comFrom}}</p>
+             <p class='main'>{{v.comContent}}
+            </p>
+        </li>
+       {{/each}}
+    </script>
+
+
+
+
+
+    <script src="./lib/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/productDetail.js"></script>
+
+</body>
+
+</html>

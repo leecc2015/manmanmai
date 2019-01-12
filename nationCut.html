@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/nationCut.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <title>国内折扣</title>
+</head>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部  -->
+        <div class="mmm_header">
+            <i class='fa fa-angle-left'></i>
+            <div class="info">国内折扣</div>
+            <div class="download"></div>
+        </div>
+
+        <!-- 详情  -->
+        <div class="mmm_detail">
+            <!-- 巨坑 -->
+        </div>
+
+        </div>
+
+        <!--    前往购买  -->
+        <div class="mmm_buy">
+            前往购买
+        </div>
+
+        <!--    二维码信息区域  -->
+        <div class="mmm_app">
+            <img src="./images/mmbweixin2.png" alt="">
+        </div>
+
+         <!--    评论区域  -->
+         <div class="mmm_comment">
+
+             <div class="write">
+                 <p>发表评论</p>
+                 <div class="text">
+                     <textarea></textarea>
+                     <div><a href="#">发表评论</a></div>
+
+                 </div>
+             </div>
+             <div class="frash">
+                    <p>最新评论</p>
+                    <div class="message">
+                        <div class='pic'><img src="./images/ic_cu.png" alt=""></div>
+                        <div class="txt">
+                            <div><span class='name'>赶鸭子上架</span><span class='time'>2016/10/25 14:18:45</span></div>
+                            <p>比超市便宜了几块</p>
+                        </div>
+                    </div>
+             </div>
+         </div>
+        
+        
+       
+
+
+        
+        <!-- 登录注册  -->
+        <div class="mmm_register">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:;" class='returnTop'>返回顶部</a>
+        </div>
+        <!-- 底部  -->
+        <div class="mmm_footer">
+            <div class="app">
+                <span>手机APP下载 </span>
+                <span>慢慢卖手机版</span>
+                <span> -- 掌上比价平台</span>
+            </div>
+            <div class="net">m.manmanbuy.com</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+     <!-- 商品列表渲染模板 -->
+     <script type='text/html' id='detailTpl'>
+        {{each result v i}}
+        <h3>{{v.productName}}</h3>
+        <div class="short">
+            <span>{{v.productForm}}</span>
+            <span>&nbsp;{{v.productTime}}</span>
+            <span>&nbsp;{{v.productTips}}</span>
+        </div>
+
+        <div class="info">
+           <div class="spic">{{@ v.productImgSm}}</div>
+            <p>{{v.productInfo}}</p>
+            <br>
+            <p>{{v.productInfo1}}</p>
+            <div class="lpic">{{@ v.productImgSm}}</div>
+        </div>
+        
+        <div class="list">
+           {{@ v.productCity}}
+        {{/each}}
+    </script>
+
+    <script src="./lib/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/nationCut.js"></script>
+</body>
+
+</html>

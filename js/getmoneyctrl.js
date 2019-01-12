@@ -1,33 +1,17 @@
 $(function () {
 
-    // 功能1 渲染三级菜单
-    // 获取页面传过来的参数id
-    var cateId = location.search.split('=')[1];
-    // console.log(cateId );
-    $.ajax({
-        type: 'get',
-        url: 'http://127.0.0.1:9090/api/getcategorybyid',
-        dataType: 'json',
-        data: {
-            categoryid: cateId
-        },
-        success: function (data) {
-            console.log(data)
-            var html = template('thirdListTpl', data);
-            $('.thirdList').html(html);
-        }
-    })
+   
 
 
     var pageId = 1;
     var pageCount = 0;
 
 
-    // 功能2 渲染产品列表
+    // 功能1 渲染产品列表
     render(pageId);
 
 
-    // 功能3 点击切换分页
+    // 功能2 点击切换分页
     $('.mmm_page .prev').on('click', function () {
         pageId--
         if (pageId < 1) {
@@ -62,10 +46,9 @@ $(function () {
         
         $.ajax({
             type: 'get',
-            url: 'http://127.0.0.1:9090/api/getproductlist',
+            url: 'http://127.0.0.1:9090/api/getmoneyctrl',
             dataType: 'json',
             data: {
-                categoryid: cateId,
                 pageid: pageId
             },
             success: function (data) {

@@ -147,12 +147,8 @@ option {
 }
 .mmm_container {
   background-color: #fff;
-  height: 3000px;
-  /* 三级导航*/
-  /* 商品列表*/
-  /* 分页*/
 }
-.mmm_container .mmm_nav {
+.mmm_nav {
   height: 1.06666667rem;
   width: 100%;
   background: url(../images/bg1.png);
@@ -162,11 +158,11 @@ option {
   color: #252117;
   padding: 0 0.13333333rem;
 }
-.mmm_container .mmm_nav a {
+.mmm_nav a {
   display: inline;
   color: #252117;
 }
-.mmm_container .mmm_nav .select {
+.mmm_nav .select {
   float: right;
   width: 1.65333333rem;
   height: 0.72rem;
@@ -178,114 +174,159 @@ option {
   border-radius: 0.06666667rem;
   box-shadow: -2px 2px 5px 2px #cccccc;
 }
-.mmm_container .mmm_goodList {
-  width: 100%;
-  margin-bottom: 0.26666667rem;
+/* 详情部分 */
+.mmm_good {
+  margin-bottom: 0.04rem;
 }
-.mmm_container .mmm_goodList li {
+.mmm_good .detail {
+  height: 6.72rem;
   width: 100%;
-  height: 3.12rem;
-  border-bottom: 1px solid #ccc;
+  padding: 0.53333333rem;
+}
+.mmm_good .detail p {
+  font-size: 0.48rem;
+  text-align: center;
+  width: 100%;
+  height: 1.86666667rem;
+}
+.mmm_good .detail .pic {
+  width: 4.48rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+.mmm_good .btn {
+  width: 100%;
+  border-top: 2px solid #bc4833;
+  border-bottom: 2px solid #bc4833;
+  overflow: hidden;
+}
+.mmm_good .btn a {
+  height: 0.93333333rem;
+  width: 33.3333%;
+  float: left;
+  color: #fff;
+  line-height: 0.93333333rem;
+  text-align: center;
+  font-size: 0.37333333rem;
+}
+.mmm_good .btn a:nth-child(1) {
+  background-color: #ffa126;
+  border-right: 2px solid #bc4833;
+}
+.mmm_good .btn a:nth-child(2) {
+  background-color: #ffc82f;
+  border-right: 2px solid #bc4833;
+}
+.mmm_good .btn a:nth-child(3) {
+  background-color: #ffc82f;
+}
+.mmm_good .price {
+  height: 1.22666667rem;
+  width: 100%;
   position: relative;
-  padding-left: 3.12rem;
+  border-bottom: 2px solid #b2b2b2;
 }
-.mmm_container .mmm_goodList li .left {
-  height: 3.12rem;
-  width: 3.12rem;
-  padding: 0.32rem;
+.mmm_good .price .left {
+  height: 1.22666667rem;
+  width: 2.4rem;
+  line-height: 1.22666667rem;
+  text-align: right;
+  font-size: 0.37333333rem;
   position: absolute;
   left: 0;
   top: 0;
+  position: relative;
 }
-.mmm_container .mmm_goodList li .info {
-  height: 100%;
-  padding: 0.4rem 0;
+.mmm_good .price .left i {
+  width: 0.21333333rem;
+  height: 0.21333333rem;
+  background: url(../images/slogo.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0.26666667rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.mmm_container .mmm_goodList li .info a {
+.mmm_good .price .right {
+  height: 1.22666667rem;
+  width: 3.70666667rem;
+  line-height: 1.22666667rem;
+  text-align: left;
   font-size: 0.37333333rem;
-  color: #252117;
-  height: 1.25333333rem;
-}
-.mmm_container .mmm_goodList li .info p {
+  position: absolute;
+  right: 0;
+  top: 0;
   color: red;
-  font-size: 0.4rem;
-  margin-bottom: 0.13333333rem;
 }
-.mmm_container .mmm_goodList li .info span {
-  color: #a0a2a2;
+.mmm_good .price .right a {
+  position: absolute;
+  right: 0.13333333rem;
+  top: 50%       ;
+  transform: translateY(-50%);
+  width: 1.49333333rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  border-radius: 0.13333333rem;
+  background-color: #ff5500;
+  color: #fff;
+  font-size: 0.37333333rem;
+  text-align: center;
+}
+.mmm_good .tips {
+  height: 1.65333333rem;
+  width: 100%;
+  border-bottom: 0.12rem solid #767676;
+  padding: 0.26666667rem;
+  color: #908587;
   font-size: 0.32rem;
 }
-.mmm_container .mmm_page {
-  position: relative;
-  height: 0.96rem;
-}
-.mmm_container .mmm_page .prev {
-  position: absolute;
-  width: 2.21333333rem;
+/* 评论部分 */
+.mmm_comment .netFri {
+  width: 100%;
   height: 0.90666667rem;
-  left: 0.56rem;
-  border-radius: 0.13333333rem;
-  box-shadow: -2px 2px 5px 2px #cccccc;
-  font-size: 0.37333333rem;
-  color: #252117;
   line-height: 0.90666667rem;
   text-align: center;
-}
-.mmm_container .mmm_page .next {
-  position: absolute;
-  width: 2.21333333rem;
-  height: 0.90666667rem;
-  right: 0.56rem;
-  box-shadow: -2px 2px 5px 2px #cccccc;
-  border-radius: 0.13333333rem;
-  font-size: 0.37333333rem;
+  font-size: 0.34666667rem;
   color: #252117;
-  line-height: 0.90666667rem;
+  background-color: #dbdbdb;
+}
+.mmm_comment ul li {
+  border-bottom: 2px solid #d0d0d0;
+  padding: 0.42666667rem 0.24rem 0.13333333rem;
+}
+.mmm_comment ul li .info {
+  overflow: hidden;
+}
+.mmm_comment ul li .info .user {
+  float: left;
+  color: #656980;
+  font-size: 0.26666667rem;
+}
+.mmm_comment ul li .info .date {
+  float: right;
+  color: #aaa;
+  font-size: 0.26666667rem;
+}
+.mmm_comment ul li .shop {
+  text-align: right;
+  color: #656980;
+  font-size: 0.32rem;
+  margin-bottom: 0.32rem;
+}
+.mmm_comment ul li .main {
+  font-size: 0.32rem;
+}
+.mmm_comment .more {
+  height: 0.85333333rem;
+  border-radius: 0.06666667rem;
+  font-size: 0.37333333rem;
+  line-height: 0.85333333rem;
   text-align: center;
+  background-image: linear-gradient(to top, #d7d7d7, #f4f4f4);
+  border-bottom: 2px solid #d0d0d0;
+  margin: 0.42666667rem 0.24rem 0.69333333rem;
 }
-.mmm_container .mmm_page .page {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 2px solid #b8b8b8;
-}
-.mmm_container .mmm_page .page .icon {
-  background-color: #e1e1e1;
-  width: 0.45333333rem;
-  height: 0.88rem;
-  border: 1px solid #c4c4c4;
-  position: absolute;
-  line-height: 0.88rem;
-  text-align: center;
-  top: 0.01333333rem;
-  right: 0;
-}
-.mmm_container .mmm_page .page select {
-  width: 2.21333333rem;
-  height: 0.90666667rem;
-  font-size: 0.46666667rem;
-  text-align: center;
-  padding-left: 0.66666667rem;
-  -webkit-appearance: none;
-}
-.mmm_container .mmm_page .page select option {
-  width: 2.21333333rem;
-  height: 0.90666667rem;
-  font-size: 0.4rem;
-  text-align: center;
-  display: block;
-}
-.mmm_container .mmm_register {
-  height: 2.05333333rem;
-  padding-top: 0.66666667rem;
-  border: none;
-  background-color: #f1f1f1;
-  margin-bottom: 0;
-}
-.mmm_container .mmm_register a {
-  border-top: 1px solid #c5c5c5;
-  border-bottom: 1px solid #c5c5c5;
-}
-.mmm_container .mmm_footer {
+.mmm_register,
+.mmm_footer {
   background-color: #f1f1f1;
 }
