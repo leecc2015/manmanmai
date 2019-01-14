@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/topbrand.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <title>品牌大全</title>
+</head>
+
+<body>
+    <div class="mmm_container">
+        <!-- 头部  -->
+        <div class="mmm_header">
+            <div class="logo"></div>
+            <div class="download"></div>
+        </div>
+        <!-- 搜索  -->
+        <div class="mmm_search">
+            <div class="sear">
+                <a href="#">搜索</a>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="请输入你想比价的商品">
+            </div>
+        </div>
+
+        <!-- 二级导航  -->
+        <div class="mmm_nav">
+            <a href="index.html">首页 ></a>
+            <a href="brandTitle.html">全部分类 ></a>
+
+        </div>
+
+
+        <!-- 品牌列表  -->
+        <div class="mmm_brand">
+            <div class="title">平板电视哪个牌子好</div>
+            <ul>
+                <!-- <li>
+                    <div class="num"></div>
+                    <a href="#" >三星平板电视</a>
+                    <p>30天全网销售：463532</p>
+                    <i class="fa fa-angle-right"></i>
+
+                </li> -->
+            </ul>
+        </div>
+
+        <!-- 单个品牌排行  -->
+        <div class="mmm_single">
+            <div class="title">平板电视产品销量排行</div>
+            <ul>
+                <!-- 单个品牌商品  -->
+            </ul>
+        </div>
+
+        <!-- 单个品牌商品排行  -->
+        <div class="mmm_singleProduct">
+            <div class="title">平板电视最新评论</div>
+            <div class="list">
+
+            <!-- <div class="mess">
+                <div class="info">
+                    <img src="./images/ic_mall.png" alt="">
+                    <p>乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视</p>
+                </div>
+                <div class="comm">
+                    <div class="user">g+++n<i>2016/2/18</i></div>
+                    <div class="text">视乐视乐视乐视乐视乐视乐视乐视乐视乐视乐视</div>
+                </div>
+            </div> -->
+        </div>
+            
+        </div>
+
+
+
+
+
+        <!-- 登录注册  -->
+        <div class="mmm_register">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:;" class='returnTop'>返回顶部</a>
+        </div>
+        <!-- 底部  -->
+        <div class="mmm_footer">
+            <div class="app">
+                <span>手机APP下载 </span>
+                <span>慢慢卖手机版</span>
+                <span> -- 掌上比价平台</span>
+            </div>
+            <div class="net">m.manmanbuy.com</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- top品牌渲染模板 -->
+    <script type='text/html' id='brandTpl'>
+        {{each result v i}}
+            <li>
+                <div>{{i+1}}</div>
+                <a href="javascript:;" >{{v.brandName}}</a>
+                <p>{{v.brandInfo}}</p>
+                <i class="fa fa-angle-right"></i>
+
+            </li>
+        {{/each}}
+    </script>
+
+
+    <!-- 对应商品渲染模板 -->
+    <script type='text/html' id='singleTpl'>
+
+        {{each result v i}}
+        <li>
+            <a href="javascript:;" class='left'>{{@ v.productImg}}</a>
+                <div class="info">
+                    <a href="javascript:;">{{v.productName}}</a>
+                    <p>{{v.productPrice}}</p>
+                    <span>{{v.productQuote }}</span>
+                    <span>{{v.productCom}}</span>
+                </div>
+            </li>
+        {{/each}}
+
+    </script>
+
+
+     <!-- 单个商品渲染模板 -->
+     <script type='text/html' id='singleProductTpl'>
+
+        {{each result v i}}
+           <div class="mess">
+                <div class="info">
+                    <div class="pic1"></div>
+                    <!-- <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt=""> -->
+                    <p>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+                </div>
+                <div class="comm">
+                    <div class="user">{{v.comName}}<i>{{v.comTime}}</i></div>
+                    <div class="text">{{v.comContent+v.comFrom}}</div>
+                </div>
+            </div>
+        {{/each}}
+
+    </script>
+
+
+
+    <script src="./lib/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/topbrand.js"></script>
+</body>
+
+</html>

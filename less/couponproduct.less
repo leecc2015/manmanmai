@@ -1,0 +1,118 @@
+@import 'common';
+
+
+.mmm_container {
+    background-color: #fff;
+}
+
+.mmm_header {
+    background-color: #f4483e;
+    .info {
+        color:#fff;
+        font-size:42/@base;
+        line-height:100/@base;
+        text-align:center;
+        font-weight:700;
+    }
+    i {
+        color:#fff;
+        font-size:60/@base;
+        line-height:100/@base;
+        position: absolute;
+        left:20/@base;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+.mmm_product {
+    // padding:0 20/@base;
+    .tips {
+        line-height:64/@base;
+        text-align: center;
+        color:#868b9b;
+    }
+
+    ul{
+        padding-top:20/@base;
+        margin-bottom:54/@base;
+
+        li {
+            padding:0 20/@base;
+            min-height:236/@base;
+            border-bottom:1px solid #ccc;
+            position: relative;
+            margin-bottom:20/@base;
+
+            .goodPic {
+                width:202/@base;
+                height:162/@base;
+                position: absolute;
+            }
+            .goodInfo {
+                margin-left:222/@base;
+                margin-bottom:32/@base;
+                p {
+                  font-size:24/@base;
+                
+                &.price {
+                    font-weight: 700;
+                    line-height:40/@base;
+                &.date {
+                    color:@mainColor;
+                }
+              }
+            }
+          }
+        }
+    }
+}
+
+
+.mmm_footer {
+    background-color: #f1f1f1;
+}
+
+
+// 模态框
+.mmm_wrapper {
+    width: 100%;
+    height:100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    top:0;
+    left:0;
+    display: none;
+
+    .swiper-container {
+        width: 522/@base;
+        height: 344/@base;
+        margin:400/@base auto;
+    }
+    // .swiper-button-next {
+    //     right:-50/@base;
+    //     font-size:60/@base;
+    //     color:#fff;
+    //     background-color: red;
+    // }
+    // .swiper-button-prev {
+    //     left:-50/@base;
+    //     font-size:60/@base;
+    //     color:#fff;
+    //     background-color: red;
+        
+    // }
+   
+   
+    .del{
+            
+        position: absolute;
+        left:30/@base;
+        top:30/@base;
+        font-size:60/@base;
+        color:#fff;
+    
+    } 
+}
+

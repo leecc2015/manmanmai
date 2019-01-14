@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="./css/gsproduct.css">
+                <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+                <title>凑单品</title>
+            </head>
+<body>
+
+
+    <div class="mmm_container">
+           <!-- 头部  -->
+           <div class="mmm_header">
+                <a href="javascript:history.go(-1);"><i class='fa fa-angle-left'></i></a>
+                <div class="info">凑单品</div>
+                <div class="download"></div>
+            </div>
+
+
+          <!-- 导航  -->
+          <div class="mmm_nav">
+              <div class="list">
+                  <div class="shop">京东</div>
+                  <div class="area">华北</div>
+                  <div class="price">全部价格</div>
+              </div>
+              <div class="sear"></div>
+              <ul class='hidden message'>
+                  <!-- <li>jingdong</li> -->
+                  
+              </ul>
+          </div>
+
+          <!-- 产品列表  -->
+          <div class="mmm_goodList">
+              <ul>
+                  <!-- <li>
+                      <a href="#" class='pic'><img src="./images/ic_mall.png" alt=""></a>
+                      <a href="#" class='one-txt-cut name'>名字名字名字名字名字名字名字名字名字名字</a>
+                      <div class="info">
+                          <span>￥0.50</span>
+                          <a href="#">去凑单</a>
+                      </div>
+                  </li> -->
+              
+              </ul>
+          </div>
+
+            <!-- 登录注册  -->
+         <div class="mmm_register">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="javascript:;" class='returnTop'>返回顶部</a>
+            </div>
+            <!-- 底部  -->
+            <div class="mmm_footer">
+                <div class="app">
+                    <span>手机APP下载 </span>
+                    <span>慢慢卖手机版</span>
+                    <span> -- 掌上比价平台</span>
+                </div>
+                <div class="net">m.manmanbuy.com</div>
+            </div>
+
+    </div>
+
+
+      <!-- shop渲染模板 -->
+      <script type='text/html' id='Tpl'>
+        {{each result v i}}
+            <li data-id="{{ v.shopId ?  v.shopId : v.areaId }}">
+               {{ v.shopName ?  v.shopName : v.areaName}}
+            </li>
+        {{/each}}
+      </script>
+
+
+
+       <!-- 商品列表渲染模板 -->
+       <script type='text/html' id='goodListTpl'>
+        {{each result v i}}
+            <li>
+                <a href="#" class='pic'><img src="{{v.productImg}}" alt=""></a>
+                <a href="#" class='one-txt-cut name'>{{v.productName}}</a>
+                <div class="info">
+                    <span>{{v.productPrice}}</span>
+                    <a href="#">去凑单</a>
+                </div>
+            </li>
+        {{/each}}
+      </script>
+
+
+
+
+    <script src="./lib/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/gsproduct.js"></script>
+    
+</body>
+</html>

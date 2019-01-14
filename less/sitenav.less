@@ -1,0 +1,64 @@
+@import 'common';
+
+
+.mmm_container {
+    background-color: #fff;
+}
+
+.mmm_header {
+    background-color: #ff841d;
+    .info {
+        color:#fff;
+        font-size:42/@base;
+        line-height:100/@base;
+        text-align:center;
+        font-weight:700;
+    }
+    i {
+        color:#fff;
+        font-size:60/@base;
+        line-height:100/@base;
+        position: absolute;
+        left:20/@base;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+.mmm_coupon {
+    ul {
+        overflow: hidden;
+        padding:22/@base 84/@base 60/@base;
+        li{
+            height:90/@base;
+            border:2px solid #bababa;
+            text-align: center;
+            line-height : 90/@base;
+            margin-right:10/@base;
+            margin-bottom:10/@base;
+            float: left;
+            background-color: #f4f4f4;
+            a {
+                position: relative;
+                font-size:34/@base;
+                text-indent: 64/@base;
+                padding-right:15/@base;
+                color:@fontColor;
+                img{
+                    width:34/@base;
+                    height:34/@base;
+                    position: absolute;
+                    left:15/@base;
+                    top:50%;
+                    transform: translateY(-50%)
+                }
+            }
+        }
+    }
+}
+
+
+.mmm_footer {
+    background-color: #f4f4f4;
+}

@@ -169,134 +169,177 @@ option {
 .mmm_footer .net {
   text-align: center;
 }
-/* nav区域 */
-.mmm_nav {
-  width: 100%;
-  background-color: #fff;
-  overflow: hidden;
-  padding-top: 0.53333333rem;
-  margin-bottom: 0.26666667rem;
-  margin-top: 0.26666667rem;
+.mmm_container {
+  background-color: #f7f7f7;
 }
-.mmm_nav a {
-  width: 25%;
-  height: 2.26666667rem;
-  float: left;
-  transition: all 1s;
+/* header区域 */
+.mmm_header {
+  background-color: #f4483e;
 }
-.mmm_nav a img {
-  width: 1.36rem;
-  height: 1.36rem;
-  margin: 0 auto;
-}
-.mmm_nav a p {
+.mmm_header .info {
+  color: #fff;
+  font-size: 0.56rem;
+  line-height: 1.33333333rem;
   text-align: center;
-  line-height: 0.66666667rem;
-  color: #222222;
+  font-weight: 700;
 }
-.mmm_nav a.hidden {
-  display: none;
+.mmm_header i {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.33333333rem;
+  position: absolute;
+  left: 0.26666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* title区域 */
+.mmm_title {
+  height: 1.06666667rem;
+  background-color: #fff;
+  margin-bottom: 0.13333333rem;
+  overflow: hidden;
+  padding-left: 0.13333333rem;
+}
+.mmm_title ul {
+  overflow: hidden;
+}
+.mmm_title ul li {
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  font-size: 0.34666667rem;
+  padding: 0 0.33333333rem;
+  float: left;
+}
+.mmm_title ul li:first-child {
+  margin-left: 0;
+}
+.mmm_title ul li:last-child {
+  margin-right: 0;
+}
+.mmm_title ul li a {
+  height: 1.06666667rem;
+  border-bottom: 3px solid transparent;
+  color: #252117;
+}
+.mmm_title ul li a.active {
+  border-bottom: 3px solid #f4483e;
+  color: #f4483e;
 }
 /* 商品区域 */
-.mmm_goodList .head {
-  height: 0.93333333rem;
+.mmm_goodList {
   width: 100%;
-  background-color: #ff841d;
-  padding: 0.13333333rem 0.26666667rem;
-  overflow: hidden;
 }
-.mmm_goodList .head h3 {
-  color: #fff;
-  font-size: 0.45333333rem;
-  float: left;
+.mmm_goodList ul {
+  padding: 0.26666667rem 0;
 }
-.mmm_goodList .head a {
-  width: 0.53333333rem;
-  height: 0.53333333rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  float: right;
-  color: #fff;
-  line-height: 0.46666667rem;
-  text-align: center;
-  font-size: 0.45333333rem;
-  margin-top: 0.06666667rem;
-}
-.mmm_goodList .list ul li {
-  height: 3.46666667rem;
+.mmm_goodList ul li {
   background-color: #fff;
-  border-bottom: 1px solid #f1f1f1;
+  padding: 0 0.13333333rem 0.26666667rem;
+  height: 100%;
   position: relative;
-  padding-left: 3.12rem;
+  margin-bottom: 0.26666667rem;
 }
-.mmm_goodList .list ul li .goodPic {
-  width: 3.12rem;
+.mmm_goodList ul li .goodPic {
+  width: 3.46666667rem;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
-  padding: 0.4rem;
+  left: 10 / base;
+  margin-right: 0.13333333rem;
 }
-.mmm_goodList .list ul li .goodInfo {
-  width: 100%;
-  height: 3.46666667rem;
-  padding: 0.45333333rem 0.37333333rem;
+.mmm_goodList ul li .goodInfo {
+  padding-left: 3.73333333rem;
+  height: 100%;
 }
-.mmm_goodList .list ul li .goodInfo .p {
-  height: 1.84rem;
+.mmm_goodList ul li .goodInfo a {
+  height: 1.17333333rem;
+  font-size: 0.37333333rem;
   color: #252117;
-  font-size: 0.37333333rem;
 }
-.mmm_goodList .list ul li .goodInfo .p .pinkage {
-  color: #ff841d;
+.mmm_goodList ul li .goodInfo .cutPrice span {
+  font-size: 0.53333333rem;
+  color: red;
 }
-.mmm_goodList .list ul li .goodInfo div {
+.mmm_goodList ul li .goodInfo .cutPrice span i {
+  font-size: 0.42666667rem;
+  font-style: normal;
+  display: inline;
+}
+.mmm_goodList ul li .goodInfo .cutPrice span em {
+  color: red;
+  font-style: normal;
+  font-size: 0.42666667rem;
+}
+.mmm_goodList ul li .goodInfo .cutPrice span del {
   color: #b2b1b0;
+  font-size: 0.26666667rem;
 }
-.mmm_goodList .list ul li .goodInfo div .page {
-  float: right;
+.mmm_goodList ul li .goodInfo .bar {
+  height: 0.4rem;
+  margin: 0.13333333rem 0 0.26666667rem 0;
+  position: relative;
 }
-/* 优惠区域 */
-.mmm_sale {
-  height: 1.14666667rem;
-  background-color: #fff;
-  padding: 0.29333333rem 0.26666667rem 0 0.26666667rem;
+.mmm_goodList ul li .goodInfo .bar a {
+  height: 0.4rem;
+  width: 2.26666667rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid red;
+  border-radius: 0.2rem;
 }
-.mmm_sale a {
-  height: 0.85333333rem;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #f1f1f1;
-  border-radius: 0.13333333rem;
-  line-height: 0.85333333rem;
-  font-size: 0.37333333rem;
+.mmm_goodList ul li .goodInfo .bar i {
+  height: 0.4rem;
+  width: 1.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: red;
+  border-radius: 0.2rem;
   text-align: center;
-  color: #9a98a6;
 }
-/* 品牌排行区域 */
-.mmm_brand .head {
-  height: 0.93333333rem;
-  width: 100%;
-  background-color: #ff841d;
-  padding: 0.13333333rem 0.26666667rem;
+.mmm_goodList ul li .goodInfo .bar i span {
+  color: #fff;
+  font-style: normal;
+  line-height: 0.4rem;
+  height: 0.4rem;
+  display: block;
+  font-size: 0.32rem;
+}
+.mmm_goodList ul li .goodInfo .bar b {
+  text-indent: 2.66666667rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: red;
+}
+.mmm_goodList ul li .goodInfo .bar .quan .hundred {
+  width: 2.21333333rem;
+  height: 0.64rem;
+}
+.mmm_goodList ul li .goodInfo .quan {
+  height: 0.77333333rem;
   overflow: hidden;
-  margin-top: 0.26666667rem;
-  margin-bottom: 0.72rem;
 }
-.mmm_brand .head h3 {
-  color: #fff;
-  font-size: 0.45333333rem;
-  float: left;
-}
-.mmm_brand .head a {
-  width: 0.53333333rem;
-  height: 0.53333333rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  float: right;
-  color: #fff;
-  line-height: 0.46666667rem;
+.mmm_goodList ul li .goodInfo .quan a {
+  height: 0.77333333rem;
+  font-size: 0.34666667rem;
+  line-height: 0.77333333rem;
   text-align: center;
-  font-size: 0.45333333rem;
-  margin-top: 0.06666667rem;
+}
+.mmm_goodList ul li .goodInfo .quan a:nth-child(1) {
+  float: left;
+  width: 2.85333333rem;
+  border: 1px dashed red;
+  color: red;
+}
+.mmm_goodList ul li .goodInfo .quan a:nth-child(2) {
+  float: right;
+  width: 1.6rem;
+  background-color: red;
+  color: #fff;
+  border-radius: 0.13333333rem;
+}
+/* footer区域 */
+.mmm_footer {
+  background-color: #f1f1f1;
 }

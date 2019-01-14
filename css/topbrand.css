@@ -1,0 +1,386 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body,
+div,
+p,
+a,
+i,
+ul,
+li,
+input,
+h3,
+textarea,
+b {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+  font-weight: normal;
+}
+body {
+  font-size: 0.37333333rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+input,
+select,
+option {
+  outline-style: none;
+  border: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+/* 多行溢出 */
+.txt-cut {
+  overflow: hidden;
+  /* 溢出文本显示省略号 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* 设置内容 2 行 */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.one-txt-cut {
+  /* 1. 规定段落中的文本不换行 */
+  white-space: nowrap;
+  /* 2. 溢出隐藏 */
+  overflow: hidden;
+  /* 3. 溢出文本, 显示省略号 */
+  text-overflow: ellipsis;
+}
+.mmm_container {
+  width: 10rem;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  min-width: 320px;
+}
+/*头部区域*/
+.mmm_header {
+  height: 1.33333333rem;
+  width: 100%;
+  background-color: #ff841d;
+  overflow: hidden;
+  position: relative;
+}
+.mmm_header .logo {
+  width: 4.94666667rem;
+  height: 0.66666667rem;
+  background: url(../images/header_logo.png) center center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 0.26666667rem;
+  transform: translateY(-50%);
+}
+.mmm_header .download {
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+  background: url(../images/header_app.png) center center no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+  right: 0.26666667rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 搜索区域 */
+.mmm_search {
+  width: 100%;
+  height: 1.33333333rem;
+  background-color: #fff;
+  padding: 0.29333333rem 0.26666667rem;
+}
+.mmm_search .sear {
+  float: right;
+  width: 1.70666667rem;
+  height: 0.8rem;
+  background-color: #ff841d;
+  border-radius: 0.4rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.45333333rem;
+}
+.mmm_search .sear a {
+  color: #fff;
+}
+.mmm_search .input {
+  width: 7.54666667rem;
+  height: 0.8rem;
+}
+.mmm_search .input input {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  border-radius: 0.4rem;
+  font-size: 0.32rem;
+  padding-left: 0.4rem;
+}
+/* 登录注册区域 */
+.mmm_register {
+  height: 0.90666667rem;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
+  background-color: #f1f1f1;
+}
+.mmm_register a {
+  float: left;
+  width: 33.3333%;
+  height: 0.90666667rem;
+  border-right: 1px solid #c5c5c5;
+  text-align: center;
+  line-height: 0.90666667rem;
+  font-size: 0.34666667rem;
+  color: #30230f;
+}
+.mmm_register .returnTop {
+  border: none;
+  background: url(../images/top.jpg) 0.26666667rem center no-repeat;
+}
+/* 底部注册区域 */
+.mmm_footer {
+  padding-top: 0.45333333rem;
+  height: 1.70666667rem;
+}
+.mmm_footer .app {
+  text-align: center;
+}
+.mmm_footer .app span:nth-child(1) {
+  color: red;
+}
+.mmm_footer .app span:nth-child(2) {
+  color: #30230f;
+}
+.mmm_footer .app span:nth-child(2) {
+  color: #c5c5c5;
+}
+.mmm_footer .net {
+  text-align: center;
+}
+/* nav区域 */
+.mmm_container {
+  background-color: #fff;
+}
+/* 二级导航*/
+.mmm_nav {
+  height: 1.04rem;
+  width: 100%;
+  background: url(../images/bg1.png);
+  background-size: 100% 1.06666667rem;
+  font-size: 0.37333333rem;
+  line-height: 1.06666667rem;
+  color: #252117;
+  padding: 0 0.13333333rem;
+}
+.mmm_nav a {
+  display: inline;
+  color: #252117;
+}
+.mmm_brand .title {
+  height: 0.96rem;
+  background-color: #eeeeee;
+  font-size: 0.37333333rem;
+  color: #7c3208;
+  line-height: 0.96rem;
+  text-indent: 0.26666667rem;
+  border-top: 2px solid #cbcbcb;
+  border-bottom: 2px solid #cbcbcb;
+}
+.mmm_brand ul li {
+  padding: 0 0.2rem 0 1.04rem;
+  height: 1.76rem;
+  border-bottom: 1px solid #cbcbcb;
+  position: relative;
+}
+.mmm_brand ul li:last-child {
+  border-bottom: none;
+}
+.mmm_brand ul li div {
+  width: 0.57333333rem;
+  height: 0.57333333rem;
+  position: absolute;
+  left: 0.26666667rem;
+  top: 0.29333333rem;
+  background-color: #818289;
+  line-height: 0.57333333rem;
+  text-align: center;
+  color: #fff;
+}
+.mmm_brand ul li:nth-of-type(1) div {
+  background-color: #f10e0e;
+}
+.mmm_brand ul li:nth-of-type(2) div {
+  background-color: #ff9314;
+}
+.mmm_brand ul li:nth-of-type(3) div {
+  background-color: #8adf5b;
+}
+.mmm_brand ul li a {
+  color: #252117;
+  font-size: 0.45333333rem;
+  height: 0.93333333rem;
+  line-height: 1.09333333rem;
+}
+.mmm_brand ul li p {
+  font-size: 0.34666667rem;
+  color: #818289;
+}
+.mmm_brand ul li i {
+  position: absolute;
+  right: 0.13333333rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.09333333rem;
+  line-height: 1.09333333rem;
+  font-size: 0.48rem;
+}
+/* 单个品牌对应商品列表*/
+.mmm_single {
+  width: 100%;
+}
+.mmm_single .title {
+  height: 0.96rem;
+  background-color: #eeeeee;
+  font-size: 0.37333333rem;
+  color: #7c3208;
+  line-height: 0.96rem;
+  text-indent: 0.26666667rem;
+  border-top: 2px solid #cbcbcb;
+  border-bottom: 2px solid #cbcbcb;
+}
+.mmm_single li {
+  width: 100%;
+  height: 3.12rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  padding-left: 3.12rem;
+}
+.mmm_single li .left {
+  height: 3.12rem;
+  width: 3.12rem;
+  padding: 0.32rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mmm_single li .info {
+  height: 100%;
+  padding: 0.4rem 0;
+}
+.mmm_single li .info a {
+  font-size: 0.37333333rem;
+  color: #252117;
+  height: 1.25333333rem;
+}
+.mmm_single li .info p {
+  color: red;
+  font-size: 0.4rem;
+  margin-bottom: 0.13333333rem;
+}
+.mmm_single li .info span {
+  color: #a0a2a2;
+  font-size: 0.32rem;
+}
+/* 单个商品列表*/
+.mmm_singleProduct {
+  width: 100%;
+  margin-bottom: 0.26666667rem;
+}
+.mmm_singleProduct .title {
+  height: 0.96rem;
+  background-color: #eeeeee;
+  font-size: 0.37333333rem;
+  color: #7c3208;
+  line-height: 0.96rem;
+  text-indent: 0.26666667rem;
+  border-top: 2px solid #cbcbcb;
+  border-bottom: 2px solid #cbcbcb;
+}
+.mmm_singleProduct li {
+  width: 100%;
+  height: 3.12rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  padding-left: 3.12rem;
+}
+.mmm_singleProduct li .left {
+  height: 3.12rem;
+  width: 3.12rem;
+  padding: 0.32rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mmm_singleProduct li .info {
+  height: 100%;
+  padding: 0.4rem 0;
+}
+.mmm_singleProduct li .info a {
+  font-size: 0.37333333rem;
+  color: #252117;
+  height: 1.25333333rem;
+}
+.mmm_singleProduct .title {
+  height: 0.96rem;
+  background-color: #eeeeee;
+  font-size: 0.37333333rem;
+  color: #7c3208;
+  line-height: 0.96rem;
+  text-indent: 0.26666667rem;
+  border-top: 2px solid #cbcbcb;
+  border-bottom: 2px solid #cbcbcb;
+}
+.mmm_singleProduct .mess {
+  overflow: hidden;
+  border-top: 2px solid #e2e2e2;
+}
+.mmm_singleProduct .mess .info {
+  margin-bottom: 0.26666667rem;
+  height: 3.22666667rem;
+  position: relative;
+  padding-top: 0.26666667rem;
+  padding-right: 0.26666667rem;
+}
+.mmm_singleProduct .mess .info img {
+  width: 3.01333333rem;
+  height: 2.82666667rem;
+  position: absolute;
+  left: 0.26666667rem;
+  top: 0.26666667rem;
+}
+.mmm_singleProduct .mess .info p {
+  margin-left: 3.54666667rem;
+  color: #878585;
+  font-size: 0.37333333rem;
+}
+.mmm_singleProduct .mess .comm {
+  background-color: #eeeeee;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  margin-bottom: 0.26666667rem;
+  border: 2px solid #e2e2e2;
+}
+.mmm_singleProduct .mess .comm .user {
+  color: #878585;
+  margin-bottom: 0.13333333rem;
+}
+.mmm_singleProduct .mess .comm .user i {
+  float: right;
+  font-size: 0.32rem;
+  font-style: normal;
+}
+.mmm_footer {
+  background-color: #eee;
+}

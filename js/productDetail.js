@@ -2,7 +2,7 @@ $(function () {
 
     // 功能1 渲染详情
 
-    var proid = getSearch("proid");;
+    var proid = getSearch("proid");
     // console.log(proid)
 
     $.ajax({

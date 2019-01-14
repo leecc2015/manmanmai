@@ -1,0 +1,279 @@
+// 引入公共文件
+@import 'common';
+
+
+/* nav区域 */
+.mmm_container{
+    background-color: #fff;
+}
+
+/* 二级导航*/
+.mmm_nav {
+    height:78/@base;
+    width: 100%;
+    background: url(../images/bg1.png);
+    background-size: 100% 80/@base;
+    font-size:28/@base;
+    line-height: 80/@base;
+    color:@fontColor;
+    padding: 0 10/@base;
+    a {
+        display: inline;
+        color:@fontColor;
+    }
+} 
+
+.mmm_brand {
+    .title{
+        height:72/@base;
+        background-color: #eeeeee;
+        font-size:28/@base;
+        color:#7c3208;
+        line-height:72/@base;
+        text-indent:20/@base;
+        border-top:2px solid #cbcbcb;
+        border-bottom:2px solid #cbcbcb;  
+    }
+
+    ul{
+    
+        li {
+            padding:0 15/@base 0 78/@base;;
+            height:132/@base;
+            border-bottom:1px solid #cbcbcb;
+            position: relative;
+        
+            &:last-child{
+                border-bottom:none;
+            }
+           
+           div {
+               width:43/@base;
+               height:43/@base;
+               position: absolute;
+               left:20/@base;
+               top:22/@base;
+               background-color: #818289;
+               line-height: 43/@base;
+               text-align: center;
+               color:#fff;
+           }
+
+           
+           &:nth-of-type(1){
+               div {
+                   background-color: #f10e0e;
+               }
+           }
+
+           &:nth-of-type(2){
+               div{
+                   background-color: #ff9314;
+               }
+           }
+
+            &:nth-of-type(3){
+                div {
+                    background-color: #8adf5b;
+                }
+           }
+            
+            a {
+                color:@fontColor;
+                font-size:34/@base;
+                height:70/@base;
+                line-height: 82/@base;
+
+            }
+            p{
+                font-size:26/@base;
+                color:#818289;  
+            }
+            i {
+                position: absolute;
+                right:10/@base;
+                top:50%;
+                transform: translateY(-50%);
+                height:82/@base;
+                line-height: 82/@base;
+                font-size:36/@base;
+            }
+        }
+    }
+}
+
+
+
+/* 单个品牌对应商品列表*/
+.mmm_single {
+    width: 100%;
+    // margin-bottom:20/@base;
+    .title{
+        height:72/@base;
+        background-color: #eeeeee;
+        font-size:28/@base;
+        color:#7c3208;
+        line-height:72/@base;
+        text-indent:20/@base;
+        border-top:2px solid #cbcbcb;
+        border-bottom:2px solid #cbcbcb;  
+    }
+    li {
+      width: 100%;
+      height: 234/@base;
+      border-bottom:1px solid #ccc;
+      position: relative;
+      padding-left:234/@base;
+
+      .left {
+        height: 234/@base;
+        width: 234/@base;
+        padding:24/@base;
+        position: absolute;
+        left:0;
+        top:0;
+
+      }
+
+      .info {
+        height:100%;
+        padding:30/@base 0;
+
+        a {
+            font-size:28/@base;
+            color:@fontColor;
+            height:94/@base;
+        }
+        p {
+            color:red;
+            font-size:30/@base;
+            margin-bottom:10/@base;
+              
+        }
+
+        span {
+            color:#a0a2a2;
+            font-size:24/@base;
+        }
+        
+
+      }
+    }
+}
+
+
+/* 单个商品列表*/
+.mmm_singleProduct {
+    width: 100%;
+    margin-bottom:20/@base;
+    .title{
+        height:72/@base;
+        background-color: #eeeeee;
+        font-size:28/@base;
+        color:#7c3208;
+        line-height:72/@base;
+        text-indent:20/@base;
+        border-top:2px solid #cbcbcb;
+        border-bottom:2px solid #cbcbcb;  
+    }
+    li {
+      width: 100%;
+      height: 234/@base;
+      border-bottom:1px solid #ccc;
+      position: relative;
+      padding-left:234/@base;
+
+      .left {
+        height: 234/@base;
+        width: 234/@base;
+        padding:24/@base;
+        position: absolute;
+        left:0;
+        top:0;
+
+      }
+
+      .info {
+        height:100%;
+        padding:30/@base 0;
+
+        a {
+            font-size:28/@base;
+            color:@fontColor;
+            height:94/@base;
+        }
+
+      }
+    }
+}
+
+
+.mmm_singleProduct {
+    .title{
+        height:72/@base;
+        background-color: #eeeeee;
+        font-size:28/@base;
+        color:#7c3208;
+        line-height:72/@base;
+        text-indent:20/@base;
+        border-top:2px solid #cbcbcb;
+        border-bottom:2px solid #cbcbcb;  
+    }
+    
+    .mess{
+        overflow: hidden;
+        border-top:2px solid #e2e2e2;
+        .info {
+            margin-bottom:20/@base;
+            height:242/@base;
+            position: relative;
+            padding-top:20/@base;
+            padding-right:20/@base;
+            img{
+                width:226/@base;
+                height:212/@base;
+                position: absolute;
+                left:20/@base;;
+                top:20/@base;;
+            }
+            p{
+                margin-left:266/@base;
+                color:#878585;
+                font-size:28/@base;
+            }
+            
+        }
+
+        .comm{
+           background-color: #eeeeee;
+           margin:0 15/@base;
+           padding:15/@base;
+           margin-bottom:20/@base;
+           border:2px solid #e2e2e2;
+           
+           .user{
+            color:#878585;
+            margin-bottom:10/@base;
+            i{
+                float: right;
+                font-size:24/@base;
+                font-style: normal;
+            }
+           } 
+        }
+    }
+}
+
+
+.mmm_footer{
+    background-color: #eee;
+}
+
+
+
+
+
+
+
+
+

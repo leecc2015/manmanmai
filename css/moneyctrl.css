@@ -169,59 +169,27 @@ option {
 .mmm_footer .net {
   text-align: center;
 }
-/* nav区域 */
-.mmm_nav {
-  width: 100%;
+.mmm_container {
   background-color: #fff;
-  overflow: hidden;
-  padding-top: 0.53333333rem;
-  margin-bottom: 0.26666667rem;
-  margin-top: 0.26666667rem;
 }
-.mmm_nav a {
-  width: 25%;
-  height: 2.26666667rem;
-  float: left;
-  transition: all 1s;
-}
-.mmm_nav a img {
-  width: 1.36rem;
-  height: 1.36rem;
-  margin: 0 auto;
-}
-.mmm_nav a p {
+/* header区域 */
+.mmm_header .info {
+  color: #fff;
+  font-size: 0.56rem;
+  line-height: 1.33333333rem;
   text-align: center;
-  line-height: 0.66666667rem;
-  color: #222222;
+  font-weight: 700;
 }
-.mmm_nav a.hidden {
-  display: none;
+.mmm_header i {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.33333333rem;
+  position: absolute;
+  left: 0.26666667rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 /* 商品区域 */
-.mmm_goodList .head {
-  height: 0.93333333rem;
-  width: 100%;
-  background-color: #ff841d;
-  padding: 0.13333333rem 0.26666667rem;
-  overflow: hidden;
-}
-.mmm_goodList .head h3 {
-  color: #fff;
-  font-size: 0.45333333rem;
-  float: left;
-}
-.mmm_goodList .head a {
-  width: 0.53333333rem;
-  height: 0.53333333rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  float: right;
-  color: #fff;
-  line-height: 0.46666667rem;
-  text-align: center;
-  font-size: 0.45333333rem;
-  margin-top: 0.06666667rem;
-}
 .mmm_goodList .list ul li {
   height: 3.46666667rem;
   background-color: #fff;
@@ -247,6 +215,9 @@ option {
   color: #252117;
   font-size: 0.37333333rem;
 }
+.mmm_goodList .list ul li .goodInfo .p a {
+  color: #252117;
+}
 .mmm_goodList .list ul li .goodInfo .p .pinkage {
   color: #ff841d;
 }
@@ -256,47 +227,68 @@ option {
 .mmm_goodList .list ul li .goodInfo div .page {
   float: right;
 }
-/* 优惠区域 */
-.mmm_sale {
-  height: 1.14666667rem;
-  background-color: #fff;
-  padding: 0.29333333rem 0.26666667rem 0 0.26666667rem;
+/* 分页*/
+.mmm_page {
+  position: relative;
+  height: 0.96rem;
+  margin-bottom: 0.66666667rem;
 }
-.mmm_sale a {
-  height: 0.85333333rem;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #f1f1f1;
+.mmm_page .prev {
+  position: absolute;
+  width: 2.21333333rem;
+  height: 0.90666667rem;
+  left: 0.56rem;
   border-radius: 0.13333333rem;
-  line-height: 0.85333333rem;
+  box-shadow: -2px 2px 5px 2px #cccccc;
   font-size: 0.37333333rem;
+  color: #252117;
+  line-height: 0.90666667rem;
   text-align: center;
-  color: #9a98a6;
 }
-/* 品牌排行区域 */
-.mmm_brand .head {
-  height: 0.93333333rem;
-  width: 100%;
-  background-color: #ff841d;
-  padding: 0.13333333rem 0.26666667rem;
-  overflow: hidden;
-  margin-top: 0.26666667rem;
-  margin-bottom: 0.72rem;
-}
-.mmm_brand .head h3 {
-  color: #fff;
-  font-size: 0.45333333rem;
-  float: left;
-}
-.mmm_brand .head a {
-  width: 0.53333333rem;
-  height: 0.53333333rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  float: right;
-  color: #fff;
-  line-height: 0.46666667rem;
+.mmm_page .next {
+  position: absolute;
+  width: 2.21333333rem;
+  height: 0.90666667rem;
+  right: 0.56rem;
+  box-shadow: -2px 2px 5px 2px #cccccc;
+  border-radius: 0.13333333rem;
+  font-size: 0.37333333rem;
+  color: #252117;
+  line-height: 0.90666667rem;
   text-align: center;
-  font-size: 0.45333333rem;
-  margin-top: 0.06666667rem;
+}
+.mmm_page .page {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #b8b8b8;
+}
+.mmm_page .page .icon {
+  background-color: #e1e1e1;
+  width: 0.45333333rem;
+  height: 0.88rem;
+  border: 1px solid #c4c4c4;
+  position: absolute;
+  line-height: 0.88rem;
+  text-align: center;
+  top: 0.01333333rem;
+  right: 0;
+}
+.mmm_page .page select {
+  width: 2.21333333rem;
+  height: 0.90666667rem;
+  font-size: 0.46666667rem;
+  text-align: center;
+  padding-left: 0.26666667rem;
+  -webkit-appearance: none;
+}
+.mmm_page .page select option {
+  width: 2.21333333rem;
+  height: 0.90666667rem;
+  font-size: 0.4rem;
+  text-align: center;
+  display: block;
+}
+.mmm_footer {
+  background-color: #f1f1f1;
 }

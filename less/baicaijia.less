@@ -1,0 +1,235 @@
+@import 'common';
+
+
+.mmm_container {
+    background-color: #f7f7f7;
+}
+
+
+/* header区域 */
+.mmm_header {
+    background-color: #f4483e;
+    .info {
+        color:#fff;
+        font-size:42/@base;
+        line-height:100/@base;
+        text-align:center;
+        font-weight:700;
+    }
+    i {
+        color:#fff;
+        font-size:60/@base;
+        line-height:100/@base;
+        position: absolute;
+        left:20/@base;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+
+/* title区域 */
+.mmm_title {
+     height:80/@base;
+     background-color: #fff;
+     margin-bottom:10/@base;
+     overflow: hidden;
+     padding-left:10/@base;
+     
+     ul {
+        overflow: hidden;
+         li {
+            height:80/@base;
+            line-height: 80/@base;
+            font-size:26/@base;
+            padding:0  25/@base;
+            float: left;
+            &:first-child {
+                margin-left:0;
+            }
+            
+            &:last-child {
+                margin-right:0;
+            }
+            
+            a {
+                height:80/@base;
+                border-bottom:3px solid transparent;
+                color:@fontColor;
+                &.active {
+                    border-bottom:3px solid #f4483e;
+                    color:#f4483e;
+                }
+            }
+
+            
+         }
+     }
+}
+
+/* 商品区域 */
+.mmm_goodList{
+
+    width:100%;
+
+    ul {
+
+        padding:20/@base 0;
+        
+        li{
+            background-color: #fff;
+            padding:0 10/@base 20/@base;
+            
+            height:100%;
+            position: relative;
+            margin-bottom:20/@base;
+            
+            .goodPic {
+                width:260/@base;
+                height: 100%;
+                position: absolute;
+                top:0;
+                left:10/base;
+                margin-right:10/@base;
+            }
+            .goodInfo {
+                padding-left:280/@base;
+                height:100%;
+               
+                    a {
+                        height:88/@base;
+                        color: @fontColor;
+                        font-size: 28/@base;
+                        color:@fontColor;
+                    }
+
+                    .cutPrice {
+
+                        span {
+                              font-size: 40/@base;
+                              color:red;
+                              
+
+                              i {
+                                font-size: 32/@base;
+                                font-style: normal;
+                                display:inline;
+                              }
+
+                              em {
+                                color:red;
+                                font-style: normal;
+                                font-size: 32/@base; 
+                              }
+
+                              del {
+                                  color:#b2b1b0;
+                                  font-size: 20/@base;
+                                  
+                                }
+                            }
+                        }
+
+                    .bar {
+                        height:30/@base;
+                        margin:10/@base 0 20/@base 0;
+                        position: relative;
+                          a {
+                          height:30/@base;
+                          width:170/@base; 
+                          position: absolute;
+                          left:0;
+                          top:0;
+                          border:1px solid red;
+                          border-radius: 15/@base; 
+                        }
+                        i {
+                            height:30/@base;
+                            width:120/@base; 
+                            position: absolute;
+                            left:0;
+                            top:0; 
+                            background-color: red;;
+                            border-radius: 15/@base;
+                            text-align:center;
+
+                            span {
+                                color:#fff;
+                                font-style:normal;
+                                line-height:30/@base;
+                                height:30/@base;
+                                display: block;
+                                font-size:24/@base;
+                            } 
+                        }
+
+                        b{
+                           text-indent:200/@base;
+                           height:30/@base;
+                           line-height:30/@base;
+                           color:red;
+                        }
+                        
+                        .quan {
+                            
+                            .hundred {
+                                width:166/@base;
+                                height:48/@base;
+                            }
+                            
+                        }
+                        
+                     }
+
+                     .quan {
+                         height:58/@base;
+                         overflow: hidden;
+                         a {
+                            height:58/@base;
+                            font-size:26/@base;
+                            line-height:58/@base;
+                            text-align:center;
+                            &:nth-child(1){
+                                float: left;
+                                width:214/@base;
+                                border:1px dashed red;
+                                color:red;
+                            }
+                            &:nth-child(2){
+                                float: right;
+                                width:120/@base;
+                                background-color: red;
+                                color:#fff;
+                                border-radius: 10/@base;
+
+
+                            }  
+                         }
+                     }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer区域 */
+.mmm_footer {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,82 @@
+// 引入公共文件
+@import 'common';
+
+
+/* nav区域 */
+.mmm_container{
+    background-color: #fff;
+}
+
+/* 二级导航*/
+.mmm_nav {
+    height:80/@base;
+    width: 100%;
+    background: url(../images/bg1.png);
+    background-size: 100% 80/@base;
+    font-size:28/@base;
+    line-height: 80/@base;
+    color:@fontColor;
+    padding: 0 10/@base;
+    a {
+        display: inline;
+        color:@fontColor;
+    }
+} 
+
+.mmm_brand {
+    .title{
+        height:80/@base;
+        margin:20/@base 10/@base;
+        background-color: #eeeeee;
+        font-size:32/@base;
+        color:#7c3208;
+        line-height:80/@base;
+        text-indent:20/@base;
+        border:2px solid #cbcbcb; 
+    }
+
+    ul{
+        border-top:2px solid #cbcbcb;
+        border-bottom:2px solid #cbcbcb;
+        overflow: hidden;
+        border-radius: 10/@base;
+        margin-bottom:52/@base;
+        li {
+            padding:0 34/@base;
+            height:82/@base;
+            background-color: #eee;
+            border-bottom:2px solid #cbcbcb;
+            &:last-child{
+                border-bottom:none;
+            }
+            overflow: hidden;
+            a {
+                color:@fontColor;
+                font-size:36/@base;
+                height:82/@base;
+                line-height: 82/@base;
+                float: left;
+
+            }
+            i {
+                float: right;
+                height:82/@base;
+                line-height: 82/@base;
+                font-size:36/@base;
+            }
+        }
+    }
+}
+
+.mmm_footer{
+    background-color: #eee;
+}
+
+
+
+
+
+
+
+
+

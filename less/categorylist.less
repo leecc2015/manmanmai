@@ -1,0 +1,182 @@
+@import "common";
+
+.mmm_container {
+    background-color: #fff;
+    height: 3000px;
+/* 三级导航*/
+    .mmm_nav {
+        height:80/@base;
+        width: 100%;
+        background: url(../images/bg1.png);
+        background-size: 100% 80/@base;
+        font-size:28/@base;
+        line-height: 80/@base;
+        color:@fontColor;
+        padding: 0 10/@base;
+        a {
+            display: inline;
+            color:@fontColor;
+        }
+
+        .select {
+            float: right;
+            width:124/@base;
+            height:54/@base;
+            line-height: 58/@base;
+            text-align: center;
+            font-size:28/@base;
+            margin-top:12/@base;
+            color:@fontColor;
+            border-radius:5/@base;
+            box-shadow: -2px 2px 5px 2px #ccc ;
+        }
+    } 
+
+/* 商品列表*/
+.mmm_goodList {
+    width: 100%;
+    margin-bottom:20/@base;
+    li {
+      width: 100%;
+      height: 234/@base;
+      border-bottom:1px solid #ccc;
+      position: relative;
+      padding-left:234/@base;
+
+      .left {
+        height: 234/@base;
+        width: 234/@base;
+        padding:24/@base;
+        position: absolute;
+        left:0;
+        top:0;
+
+      }
+
+      .info {
+        height:100%;
+        padding:30/@base 0;
+
+        a {
+            font-size:28/@base;
+            color:@fontColor;
+            height:94/@base;
+        }
+        p {
+            color:red;
+            font-size:30/@base;
+            margin-bottom:10/@base;
+            // overflow:hidden;
+            // text-overflow:ellipsis;
+            // display:-webkit-box;
+            // line-clamp:2      
+        }
+
+        span {
+            color:#a0a2a2;
+            font-size:24/@base;
+        }
+        
+
+      }
+    }
+}
+
+/* 分页*/
+.mmm_page {
+    position: relative;
+    height:72/@base;
+    .prev {
+        position: absolute;
+        width:166/@base;
+        height:68/@base;
+        left:42/@base;
+        border-radius: 10/@base;
+        box-shadow: -2px 2px 5px 2px #ccc ;
+        font-size:28/@base;
+        color:@fontColor;
+        line-height:68/@base;
+        text-align: center;
+    }
+
+    .next {
+        position: absolute;
+        width:166/@base;
+        height:68/@base;
+        right:42/@base;
+        box-shadow: -2px 2px 5px 2px #ccc ;
+        border-radius: 10/@base;
+        font-size:28/@base;
+        color:@fontColor;
+        line-height:68/@base;
+        text-align: center;
+    }
+    .page {
+        position: absolute;
+        // width:166/@base;
+        // height:68/@base;
+        left:50%;
+        transform:translateX(-50%);
+        border: 2px solid #b8b8b8;
+        
+        .icon {
+            background-color: #e1e1e1;
+            width:34/@base;
+            height:66/@base; 
+            border: 1px solid #c4c4c4;
+            position: absolute;
+            line-height:66/@base;
+            text-align: center;
+            top:1/@base;
+            right:0;
+
+        }
+
+        select {
+            width:166/@base;
+            height:68/@base;
+            font-size:35/@base;
+            text-align:center;
+            padding-left:50/@base;
+            // 隐藏下拉图标
+            -webkit-appearance:none;
+            
+            option{
+                width:166/@base;
+                height:68/@base;
+                font-size:30/@base;
+                text-align:center;
+                display: block;
+            }
+        }
+    }
+}
+
+.mmm_register {
+    height:154/@base;
+    padding-top:50/@base;
+    border:none;
+    background-color: #f1f1f1;
+    margin-bottom:0;
+    a {
+
+        border-top:1px solid #c5c5c5;
+        border-bottom:1px solid #c5c5c5;
+    }
+}
+
+.mmm_footer {
+    
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+}

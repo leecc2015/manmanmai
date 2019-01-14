@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/couponproduct.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <title>优惠券</title>
+</head>
+
+<body>
+    <div class="mmm_contariner">
+
+        <!-- 头部  -->
+        <div class="mmm_header">
+                <a href="javascript:history.go(-1);"><i class='fa fa-angle-left'></i></a>
+            <div class="info">优惠券</div>
+            <div class="download"></div>
+        </div>
+
+
+        <!-- 商品列表  -->
+        <div class="mmm_product">
+            <p class='tips'>--点餐前出示手机中的优惠券，即可享受优惠--</p>
+            <ul>
+                <!-- <li>
+                    <div class="goodPic">
+                        <a href="">
+                            <img src="./images/ic_kb.png" alt="">
+
+                        </a>
+                    </div>
+
+                    <div class="goodInfo">
+                        <p>名字名字名字名字名字名名字名字名字名字名字名字
+                        </p>
+                        <p class='price'>￥ 28</p>
+                        <br>
+                        <p class='date'>有效期至10月31日</p>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+
+
+         <!-- 登录注册  -->
+         <div class="mmm_register">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="javascript:;" class='returnTop'>返回顶部</a>
+            </div>
+            <!-- 底部  -->
+            <div class="mmm_footer">
+                <div class="app">
+                    <span>手机APP下载 </span>
+                    <span>慢慢卖手机版</span>
+                    <span> -- 掌上比价平台</span>
+                </div>
+                <div class="net">m.manmanbuy.com</div>
+            </div>
+
+    </div>
+
+
+    <!-- 模态框 -->
+    <div class="mmm_wrapper">
+            <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/ic_cu.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/ic_kb.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/ic_pp.png" alt=""></div>
+                      
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+
+                
+                <div class="del fa fa-window-close-o"></div>
+    </div>
+
+
+    
+      <!-- 优惠列表渲染模板 -->
+      <script type='text/html' id='couponproductTpl'>
+
+        {{each result v i}}
+        <li>
+            <div class="goodPic">
+                    <a href="javascript:;">
+                      {{@ v.couponProductImg}}
+                    </a>
+                </div>
+
+                <div class="goodInfo">
+                    <p> {{v.couponProductName}}</p>
+                    <p class='price'> {{v.couponProductPrice}}</p>
+                    <br>
+                    <p class='date'> {{v.couponProductTime}}</p>
+                </div>
+            </li>
+        {{/each}}
+    </script>
+
+
+
+
+
+    <script src="./lib/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/swiper/js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/couponproduct.js"></script>
+</body>
+
+</html>

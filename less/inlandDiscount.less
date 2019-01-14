@@ -1,0 +1,89 @@
+@import 'common';
+
+
+
+.mmm_container {
+    background-color: #fff;
+}
+
+
+/* header区域 */
+.mmm_header {
+    .info {
+        color:#fff;
+        font-size:42/@base;
+        line-height:100/@base;
+        text-align:center;
+        font-weight:700;
+    }
+    i {
+        color:#fff;
+        font-size:60/@base;
+        line-height:100/@base;
+        position: absolute;
+        left:20/@base;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+
+/* 商品列表区域 */
+.mmm_productList {
+    // margin-bottom:72/@base;
+    ul {
+        overflow: hidden;
+        li {
+            height:550/@base;
+            width: 50%;
+            border-bottom:2px solid #ccc;
+            float: left;
+
+            &:nth-child(odd){
+                border-right:2px solid #ccc;
+            }
+    
+            .pic {
+                height:334/@base;
+                padding:20/@base 35/@base;
+            }
+            .message {
+                padding:0 30/@base;
+                h3{
+                   height:76/@base;
+                   font-weight: 700;
+                   font-size:26/@base;
+                   color:@fontColor;
+                }
+                p {
+                    font-size:24/@base;
+                    line-height:48/@base;
+                    color:@mainColor;  
+                }
+                .info {
+                    line-height:52/@base;
+                    color:#a9a7a5;
+                    span {
+                        font-size:24/@base;
+                    }
+                }
+            }
+        }
+        }
+    }
+
+/* 小提示区域 */
+.mmm_tips {
+    height:72/@base;
+    // line-height:72/@base;
+    padding-top:15/@base;
+    p {
+        text-align: center;
+        font-size:30/@base;
+
+    }
+}
+    
+/* footer区域 */
+.mmm_footer {
+    background-color: #f1f1f1;
+}

@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/category.css">
     <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
-    <title>慢慢卖-分类</title>
+    <title>慢慢卖</title>
 </head>
-
 
 <body>
 
@@ -28,40 +27,16 @@
                 <input type="text" placeholder="请输入你想比价的商品">
             </div>
         </div>
+        <!-- 分类  -->
+        <div class="mmm_category">
 
-        <!-- 三级导航  -->
-        <div class="mmm_nav">
-            <a href="index.html">首页 ></a>
-            <a href="discount.html">全部分类 ></a>
-            <a href="javascript:;" class='thirdList'>
-                <!-- 渲染 -->
-            </a>
-            <a href="#" class='select'>筛选</a>
         </div>
-        <!-- 商品列表  -->
-        <div class="mmm_goodList">
-            <ul>
-
-            </ul>
-        </div>
-
-        <!-- 分页  -->
-        <div class="mmm_page">
-            <div class="prev">上一页</div>
-            <div class="page">
-                <div class="icon fa fa-chevron-down"></div>
-                <select>
-
-                </select>
+         <!-- 登录注册  -->
+         <div class="mmm_register">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="javascript:;" class='returnTop'>返回顶部</a>
             </div>
-            <div class="next">下一页</div>
-        </div>
-        <!-- 登录注册  -->
-        <div class="mmm_register">
-            <a href="#">登录</a>
-            <a href="#">注册</a>
-            <a href="javascript:;" class='returnTop'>返回顶部</a>
-        </div>
         <!-- 底部  -->
         <div class="mmm_footer">
             <div class="app">
@@ -72,49 +47,42 @@
             <div class="net">m.manmanbuy.com</div>
         </div>
 
-</div>
 
 
-    <!-- 三级菜单渲染模板 -->
-    <script type='text/html' id='thirdListTpl'>
 
-        {{each result v i}}
-           <span>{{v.category}} ></span>
-        {{/each}}
-    </script>
 
-    <!-- 商品渲染模板 -->
-    <script type='text/html' id='goodListTpl'>
+
+    </div>
+
+
+    <!-- 分类渲染模板 -->
+    <script type='text/html' id='cateTpl'>
 
         {{each result v i}}
-        <li>
-            <a href="productDetail.html?proid={{v.productId}}&&brand={{v.brandName}}&&proCom={{v.productCom}}" class='left'>{{@ v.productImg}}</a>
-                <div class="info">
-                    <a href="productDetail.html?proid={{v.productId}}&&brand={{v.brandName}}&&proCom={{v.productCom}}">{{v.productName}}</a>
-                    <p>{{v.productPrice}}</p>
-                    <span>{{v.productQuote }}</span>
-                    <span>{{v.productCom}}</span>
+        <div class="cateName">
+        
+                <h3 data-id='{{v.titleId}}'>{{v.title}}</h3>
+                <div class="{{ i<2 ? 'cateList disb' : 'cateList'}}">
                 </div>
-            </li>
+               
+                <i class='{{ i<2 ? 'fa fa-chevron-down' : 'fa fa-chevron-right'}}'></i>
+        </div>
         {{/each}}
-
     </script>
- 
-    
-         <!-- 分页渲染模板 -->
-     <script type='text/html' id='pageListTpl'>
 
-        {{each arr v i}}
-          <option value='{{i+1}}'>{{v}}</option>
+    <!-- 分类列表渲染模板 -->
+    <script type='text/html' id='cateListTpl'>
+
+        {{each result v i}}
+                <a href="categorylist.html?cate={{v.categoryId}}">{{v.category}}</a>
         {{/each}}
-      </script>
+    </script>
 
 
     <script src="./lib/jQuery/jquery-1.12.4.min.js"></script>
     <script src="./lib/artTemplate/template-web.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/category.js"></script>
-
 </body>
 
 </html>

@@ -14,7 +14,7 @@
     <div class="mmm_container">
         <!-- 头部  -->
         <div class="mmm_header">
-            <i class='fa fa-angle-left'></i>
+                <a href="javascript:history.go(-1);"><i class='fa fa-angle-left'></i></a>
             <div class="info">国内折扣</div>
             <div class="download"></div>
         </div>
@@ -93,7 +93,7 @@
         {{each result v i}}
         <h3>{{v.productName}}</h3>
         <div class="short">
-            <span>{{v.productForm}}</span>
+            <span>{{v.productFrom}}</span>
             <span>&nbsp;{{v.productTime}}</span>
             <span>&nbsp;{{v.productTips}}</span>
         </div>
@@ -108,6 +108,28 @@
         
         <div class="list">
            {{@ v.productCity}}
+        {{/each}}
+    </script>
+
+
+    <!-- inlandDiscount渲染模板 -->
+    <script type='text/html' id='inlandDiscountTpl'>
+        {{each result v i}}
+        <h3>{{v.productName}}</h3>
+        <p class='inlandPrice'>{{v.productPrice}}</p>
+        <div class="short">
+            <span>{{v.productFrom}}</span>
+            <span>&nbsp;{{v.productTime}}</span>
+            <span>&nbsp;{{v.productTips}}</span>
+        </div>
+
+        <div class="info">
+           <div class="spic">{{@ v.productImg}}</div>
+            <p>{{v.productInfo}}</p>
+            
+            <div class="lpic">{{@ v.productImg}}</div>
+        </div>
+        
         {{/each}}
     </script>
 

@@ -88,7 +88,7 @@
      <script type='text/html' id='goodListTpl'>
         {{each result v i}}
             <li>
-                <div class="goodPic">{{@ v.productImgSm }}</div>
+                <div class="goodPic"><a href="nationCut.html?proid={{v.productId}}">{{@ v.productImgSm }}</a></div>
                 <div class="goodInfo">
                     <div class='p'>{{v.productName}}<span class='pinkage'>{{v.productPinkage}}</span></div>
                     <div><span>{{v.productFrom}} |</span><span> {{v.productTime}}</span><span class='page'>{{i+1}}</span></div>
